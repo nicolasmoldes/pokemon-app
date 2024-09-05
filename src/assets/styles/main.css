@@ -1,0 +1,11 @@
+body {
+    font-family: 'Poppins', sans-serif; /* Cambia a la fuente usada en Figma */
+    background-color: #F5F5F5; /* Fondo de la aplicación */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  h1, h2, h3 {
+    color: #333; /* Color de texto principal */
+  }
