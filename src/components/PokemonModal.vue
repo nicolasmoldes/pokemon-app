@@ -70,7 +70,7 @@ export default {
       this.removeFavorite(pokemonId);
     },
     sharePokemon() {
-      const pokemonData = `${this.pokemon.name}, Height: ${this.pokemon.height}, Weight: ${this.pokemon.weight}`;
+      const pokemonData = `${this.pokemon.name}, Height: ${this.pokemon.height}, Weight: ${this.pokemon.weight}, Type: ${this.pokemon.types.map(typeInfo => typeInfo.type.name).join(', ')} `;
       navigator.clipboard.writeText(pokemonData)
         .then(() => alert('Datos copiados al portapapeles'))
         .catch((err) => console.error('Error al copiar:', err));
